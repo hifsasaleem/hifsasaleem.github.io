@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Hifsa Saleem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+    <!----Font awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class = "logo">
+                    <i class="fa-solid fa-h"></i>
+                    <div class="logo-text">Hifsa Saleem</div>
+                </div>
+                <nav>
+                    <div class = "toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class = "nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Porfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                     <img src="https://avatars.githubusercontent.com/u/80507817" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                     <h5>Hi I'am <span class="input">Software Engineer</span></h5>
+                     <h1>Hifsa Saleem</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Maecenas posuere posuere condimentum. Donec posuere consectetur ultrices.
+                         Ut purus nibh, pellentesque a mi a, malesuada elementum metus.
+                         Mauris sit amet justo a felis tincidunt efficitur at at tellus.
+                         Etiam viverra lorem quis ligula posuere ornare. Cras mattis, turpis non condimentum dictum.</p>
+                     <div class="btn-group">
+                         <a href="#" class="btn active">Download CV</a>
+                         <a href="#" class="btn">Contact</a>
+                     </div>
+                     <div class="social">
+                         <a href="#"><i class="fa-brands fa-linkedin"> </i></a>
+                         <a href="#"><i class="fa-brands fa-twitter"> </i></a>
+                         <a href="#"><i class="fa-brands fa-github"> </i></a>
+                         <a href="#"><i class="fa-brands fa-youtube"> </i></a>
+
+                     </div>
+                 </div>
+
+             </div>
+        </div>
+
+    </div>
+
+<script>
+    let toggle-btn = document.querySelector(".toggle-btn");
+    let nav        = document.querySelector(".nav-links");
+    let links      = document.querySelector(".nav-links li");
+    toggle-btn.addEventListener("click",function(){
+           this.classList.toggle("click");
+           nav.classList.toggle("open");
+    })
+    var typed = new Typed(".input",{
+    strings: ["Software Engineer", "Custom Software Developer"],
+    typedSpeed: 70,
+    backSpeed: 70,
+    loop:true
+    });
+</script>
+
+</body>
+</html>
